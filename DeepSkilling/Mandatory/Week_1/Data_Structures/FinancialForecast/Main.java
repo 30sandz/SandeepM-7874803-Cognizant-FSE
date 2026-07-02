@@ -11,6 +11,7 @@ public class Main {
         double year = 5;
 
         System.out.println("Forecasted amount: "+ Forecast.recursiveforecast(intialInvestment, growthRate, year));
-        
+        System.out.println("Optimized Forecast "+Forecast.optimizedforecast(intialInvestment, growthRate, year));
+
     }
 }

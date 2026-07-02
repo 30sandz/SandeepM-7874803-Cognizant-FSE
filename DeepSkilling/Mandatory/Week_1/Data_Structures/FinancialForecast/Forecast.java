@@ -7,5 +7,10 @@ public class Forecast {
 
         return recursiveforecast(amt*(1+r), r, year-1);
     }
+
+    public static double optimizedforecast(double amt, double r, double year){
+        
+        return amt * Math.pow(1+r, year);
+    }
     
 }
