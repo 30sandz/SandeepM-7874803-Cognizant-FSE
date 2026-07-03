@@ -1,0 +1,4 @@
+com\sandz\repository\BookRepository.class
+com\sandz\service\BookService.class
+com\sandz\App.class
+com\sandz\Entities\Book.class
