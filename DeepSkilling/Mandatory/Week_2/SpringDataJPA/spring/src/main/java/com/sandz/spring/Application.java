@@ -22,14 +22,20 @@ public class Application {
 
 		testAllCountries(service);
 
+		System.out.println(service.getCode("IN"));
+		//service.addCountry("BE","Berlin");
+		// service.updateCountry("IN", "Bharat");
+		// service.deleteCountry("CH");
+		System.out.println(service.findCountryContaining("B"));
+
 		
 	}
 
 	public static void testAllCountries(CountryService service){
 		log.info("Start");
 		List<Country> list = service.getAllCountry();
-		log.debug("country={}", list);
-		log.info("END"); 
+		log.info("country={}", list);
+		log.info("END");
 	}
 
 }

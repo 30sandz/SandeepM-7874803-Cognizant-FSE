@@ -9,6 +9,13 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Country {
+
+    public Country(){}
+
+    public Country(String code, String name){
+        this.code = code;
+        this.name = name;
+    }
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,5 +41,10 @@ public class Country {
 
     public void setCode(String code){
         this.code = code;
+    }
+
+    @Override
+    public String toString(){
+        return "Country code: "+code+" Country Name: "+name;
     }
 }
