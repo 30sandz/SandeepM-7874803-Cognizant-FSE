@@ -10,4 +10,10 @@
         <constructor-arg index="1" value="India"/>
 
     </bean>
+    
+    <bean id="usa" class="com.example.demo.Country">
+        <constructor-arg index="0" value="US"/>
+        <constructor-arg index="1" value="USA"/>
+
+    </bean>
 </beans>
